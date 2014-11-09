@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+// Outlets for Labels and buttons 
     
     @IBOutlet weak var nameTextField: UITextField!
     
@@ -28,12 +29,15 @@ class ViewController: UIViewController {
         
     }
    
+//Shortcut function to resignFirstResponder 
     
     func resignfirstresponder () {
         
         messageTextField.resignFirstResponder()
         nameTextField.resignFirstResponder()
     }
+  
+//Send Mail Action
     
     @IBAction func sendMailButton(sender: UIButton) {
         
@@ -60,6 +64,8 @@ class ViewController: UIViewController {
         }
         
     }
+    
+//Reset button action
     
     @IBAction func resetButton(sender: UIButton) {
         
